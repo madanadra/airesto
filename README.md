@@ -2,10 +2,10 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Architecture
 
-Frontend: Next.js, React, TypeScript
-Styling: TailwindCSS
-Database: Supabase
-ORM: Prisma
+- Frontend - Next.js, React, TypeScript
+- Styling - TailwindCSS
+- Database - Supabase
+- ORM - Prisma
 
 ## n8n Workflow
 
