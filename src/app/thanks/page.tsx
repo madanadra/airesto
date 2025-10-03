@@ -1,10 +1,7 @@
-'use client'
-
 import Link from "next/link";
-import { useSearchParams } from "next/navigation";
 
-export default function Finish() {
-    const status = useSearchParams().get('transaction_status')
+export default function Finish({searchParams}: {searchParams: { [key: string]: string | string[] | undefined }}) {
+    const status = searchParams.transaction_status
 
     return (
         <div className="grid gap-y-2 h-screen justify-items-center content-center p-4 font-medium">
