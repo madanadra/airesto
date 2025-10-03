@@ -3,6 +3,8 @@ import { index } from "@/fetch";
 import { Menu } from "@/type";
 import { Suspense } from "react";
 
+export const dynamic = 'force-dynamic'
+
 export default async function Home() {
   const Main = async () => {
     const data: {error: string} | {data: Menu} = await index()
