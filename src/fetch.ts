@@ -18,7 +18,7 @@ export async function index() {
     }
 }
 
-export async function upload(_current: any, e: FormData) {
+export async function upload(_current: unknown, e: FormData) {
     const image = e.get('image') as File
     const formData = new FormData()
     formData.append('image', image)

@@ -60,15 +60,15 @@ export default function Form() {
             </h2>
 
             <div className="flex gap-2 items-center justify-end mt-4">
-                {notif &&
+                {notif ?
                     <span className={`${notif.success ? 'bg-green-200' : 'bg-red-200'} rounded-md px-2 py-1 text-sm`}>
                         {notif.message}
-                    </span>
+                    </span> : []
                 }
                 <Button />
             </div>
 
-            {preview && <img src={preview} alt="Preview" className="mt-8 w-full max-w-sm mx-auto"/>}
+            {preview ? <img src={preview} alt="Preview" className="mt-8 w-full max-w-sm mx-auto"/> : []}
         </form>
     );
 }
